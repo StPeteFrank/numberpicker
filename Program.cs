@@ -12,12 +12,16 @@ namespace numberpicker
       return result;
     }
 
-
     static void Main(string[] args)
     {
       Console.WriteLine("Let's create a numberpicker game");
 
-      Console.WriteLine("Pick a number between 1 and 20");
+
+
+      Console.WriteLine("Your number is, number");
+      var number = Console.ReadLine();
+
+      System.Console.WriteLine("You favorite number is " + number);
 
     }
   }
