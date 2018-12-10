@@ -24,6 +24,7 @@ namespace numberpicker
       //Name your while loop. this will make your if else statement run its loop as long as it is true.
       while (guessing)
       {
+        //Defines where userInput comes from. Comes from the Console.ReadLine.
         Console.WriteLine("Is your number higher or lower?");
         var userInput = Console.ReadLine();
 
@@ -52,11 +53,6 @@ namespace numberpicker
       }
 
 
-
-
-
-
-
       //Set the minimum number to 0
       //Set the maximum number to 100
       //Start at 50 as starting guess
@@ -67,61 +63,3 @@ namespace numberpicker
     }
   }
 }
-
-
-// const MIN = 1
-// const MAX = 1000
-
-// let upper, lower, guess, tries
-
-// const startGame = () => {
-//   lower = MIN
-//   upper = MAX
-//   tries = 0
-//   updateGame()
-//   document.querySelector('#intro').style.display = 'none'
-//   document.querySelector('#game').style.display = 'block'
-// }
-
-// const endGame = () => {
-//   document.querySelector('#game').style.display = 'none'
-//   document.querySelector('#victory').style.display = 'block'
-//   document.querySelector('#tries').textContent = tries
-// }
-
-// const resetGame = () => {
-//   document.querySelector('#victory').style.display = 'none'
-//   document.querySelector('#intro').style.display = 'block'
-//   tries = 0
-//   lower = MIN
-//   upper = MAX
-// }
-
-// const guessLower = () => {
-//   upper = guess - 1
-//   updateGame()
-// }
-
-// const guessHigher = () => {
-//   lower = guess + 1
-//   updateGame()
-// }
-
-// const updateGame = () => {
-//   guess = Math.round((lower + upper) / 2)
-//   document.querySelector('#guess').textContent = guess
-//   tries++
-// }
-
-// const main = () => {
-//   document.querySelector('#min').textContent = MIN
-//   document.querySelector('#max').textContent = MAX
-//   document.querySelector('#dif').textContent = Math.round(Math.log(MAX) / Math.log(2))
-//   document.querySelector('#ok').addEventListener('click', startGame)
-//   document.querySelector('#lower').addEventListener('click', guessLower)
-//   document.querySelector('#higher').addEventListener('click', guessHigher)
-//   document.querySelector('#yes').addEventListener('click', endGame)
-//   document.querySelector('#reset').addEventListener('click', resetGame)
-// }
-
-// main()
